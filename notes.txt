@@ -1,0 +1,10 @@
+//Hot or cold Project
+set a var to track number of attemps by user - var = count
+computer picks a random number - var = answer
+user chooses a number between 1 and 100 - var == guess
+if guess is NaN or <1 or >100, say it must be a number between 1 and 100
+check to see if guess === answer, if it say "congrats, youve guess it in (count) tries"
+if the difference between answer and guess is < or = 5, say "really hot"
+if the difference is < 10 and > 5, say "hot"
+if <20 and > 10, say "Warm"
+if > 25, say "cold"
