@@ -3,11 +3,18 @@ var randNum = Math.floor(Math.random()*101);
 console.log(randNum);
 var count = 0;
 var guess;
+
 var numDiff;
+
+//track previous guesses
+var allGuesses = [];
+
 while (randNum != guess){
  count++;
  guess = prompt("Pick a number between 1 and 100");
  var numDiff = Math.abs(randNum - guess);
+ allGuesses.push(guess);
+ console.log("Previous Guesses:" + allGuesses);
 if (guess < 1 || guess > 100 || isNaN(guess)){
     alert("You must pick a real number that is more than 0 and less than 101");
 }
