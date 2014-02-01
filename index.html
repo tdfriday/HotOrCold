@@ -5,24 +5,28 @@
 <meta charset="utf-8">
 <title> </title>
 <link rel="stylesheet" href="main.css" type="text/css" />
-<script type="text/javascript" src="script.js"></script>
+<script type="text/javascript" src="hotcold.js"></script>
 </head>﻿
 <body>
 	<div class="navbar">
 		<div id="title"><p>"The Hot or Cold Game"</p></div>
 		<div class="navbttn">
 			<ul>
-				<li>New Game</li>
-				<li>Quit Game</li>
-				<li>About Game Greator</li>
+				<li id="newgame">New Game</li>
+				<li id="quit">Quit Game</li>
 				<li><a href="thinkful.com/">Learn How to Code</a></li>
 			</ul>
 		</div>
 	</div>
-	<div class="content"><p>Guess what number I'm thinking of, between 1 and 100</p></div>
-		<div class="guessbox">
-		<div class="guess">"guess area"</div><div class="alerts">"alerts area"</div><div class="score">"previous guesses"</div></div>
-	</div>
-	<div></div>
+	<div class="header"><p>I'm thinking of a number between 1 and 100. Can you guess what it is?</p></div>
+	<div class="guessbox">
+		<input id="guess" maxlength="3" type="text">
+		<button id="submit" class="buttons">Guess</button>
+		<button id="endgame" class="buttons">Quit</button>
+		<div class="scores" id="alerts"></div>
+        <div></div>
+        <div class="scores" id="previous"></div>
+    </div>
+	<div class="footer"></div>
 </body>
 </html>

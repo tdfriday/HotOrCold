@@ -8,3 +8,4 @@ if the difference between answer and guess is < or = 5, say "really hot"
 if the difference is < 10 and > 5, say "hot"
 if <20 and > 10, say "Warm"
 if > 25, say "cold"
+

@@ -1,13 +1,63 @@
-div{
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
-	border: dashed 1px yellow;
+html, body, div, span, applet, object, iframe, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*MY CODE BEGINS HERE*/
+
+body{
+	background-color: #B5B5B5;
+	font-family: sans-serif;
+	font-size: 14px;
 }
 .navbar{
 	margin: auto;
 	height: 80px;
 	width: auto;
-	font-family: sans-serif;
-	font-size: 12px;
+	
 }
 #title{
 	float: left;
@@ -24,33 +74,44 @@ li{
 	padding-left: 20px;
 	
 }
-.content{
+.header{
 	display: block;
 	text-align: center;
-
+	padding: 20px;
+}
+.footer{
+	display: block;
+	text-align: center;
+	padding: 20px;
 }
 .guessbox{
+	background-color: #ffffff;
 	display: block;
 	text-align: center;
 	margin: auto;
-	border-radius: 10% 10% 0 0;
+	border-radius: 10% 10% 5% 5%;
 	width: 500px;
 	height: 300px;
 	border: solid black 2px;
 }
-.guess{
+#guess{
+	text-align: center;
 	border: 1px solid black;
+	font-size: 2em;
 	display: block;
-	margin: 60px auto;
+	margin: 60px auto 10px;
 	width: 60px;
 	height: 60px;
 }
-.alerts{
+.buttons{
+	padding: 5px;
+	height: 40px;
+	width: 70px;
+	border-radius: 5%;
+	margin: 5px;
+}
+.scores{
 	display: block;
 	width: auto;
-	height: 60px;
-}
-.score{
-	clear: both;
-	height: 60px;
+	height: 30px;
 }
