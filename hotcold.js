@@ -1,5 +1,5 @@
 $(document).ready(function(){
-var count = 1;
+var count = 0;
 var allGuesses = []; //an array to keep track of previous guesses
 var randNum = Math.floor((Math.random()*99) +1); 
   console.log(randNum); // prints random number to console for debugging 
