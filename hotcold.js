@@ -11,6 +11,12 @@ var randNum = Math.floor((Math.random()*99) +1);
     $('#previous').html(" ");
   });
 
+$('#guess').keypress(function(event){
+    if(event.keyCode == 13) {
+      $("#submit").click();
+      return false;
+    }
+    });
 
   $('#submit').click(function(){
     var guess = $('#guess').val();     
@@ -22,12 +28,6 @@ var randNum = Math.floor((Math.random()*99) +1);
       guessHint();
       guessCheck();}
       
-  $('#guess').keypress(function(event){
-    if(event.keyCode == 13) {
-      $("#submit").click();
-      return false;
-    }
-    });
      
   
 function youWin(){ // varying responses to winning guess
