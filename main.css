@@ -47,6 +47,9 @@ table {
 }
 
 /*MY CODE BEGINS HERE*/
+a{
+	text-decoration: none;
+	}
 div{
 	padding: 2px;
 }
@@ -119,4 +122,11 @@ li{
 	display: block;
 	width: auto;
 	height: 30px;
+}
+.navlinks{
+	color: blue;
+	border: 1px solid black;
+	border-radius: 5px;
+	text-decoration: none;
+	padding: 5px;
 }

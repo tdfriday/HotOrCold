@@ -4,12 +4,6 @@ var allGuesses = []; //an array to keep track of previous guesses
 var randNum = Math.floor((Math.random()*99) +1); 
   console.log(randNum); // prints random number to console for debugging 
 
-  $("#endgame").click(function(){
-    $(".footer").html("The answer is " + randNum);
-    $('#alerts').html('');
-    $('.header').html(" ");
-    $('#previous').html(" ");
-  });
 
 $('#guess').keypress(function(event){
     if(event.keyCode == 13) {
@@ -18,7 +12,7 @@ $('#guess').keypress(function(event){
     }
     });
 
-  $('#submit').click(function(){
+$('#submit').click(function(){
     var guess = $('#guess').val();     
     if (validGuess()){
     count++;
@@ -72,12 +66,16 @@ function youWin(){ // varying responses to winning guess
     }
     }
 //end game
-function endGame(){
-  $('.footer').html("The answer is " + randNum);
-} 
+ $("#endgame, #quitgame").click(function(){
+    $('.footer').html("The answer is " + randNum);
+    $('#alerts').html('');
+    $('.header').html("Click New Game above to play again");
+    $('#previous').html(" ");
+});
+
 
 //reset game
-    $('#newgame').click(function(){
+  $('#newgame').click(function(){
 count = 0;
 allGuesses.length = 0;
 randNum = Math.floor((Math.random()*99) +1); 
